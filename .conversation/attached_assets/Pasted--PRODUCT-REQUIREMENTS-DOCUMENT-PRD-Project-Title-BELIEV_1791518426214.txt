@@ -1,0 +1,109 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+## Project Title
+BELIEVE JAH Design — High-End Fashion Atelier & Digital Portfolio Web Application
+
+---
+
+## 1. EXECUTIVE SUMMARY & OBJECTIVES
+Build a luxury, long-scroll editorial showcase and lead-generation web platform for **BELIEVE JAH Design**, a premier menswear fashion brand specializing in traditional Nigerian attire (Agbada, Kaftans, Senator suits) and custom graphic tees.
+
+The site is **NOT an e-commerce platform** (no integrated payment gateway or direct cart checkout). The primary objective is **lead generation, client consultation routing, and bespoke measurement acquisition**. Transactions are closed off-platform via WhatsApp or direct phone consultation.
+
+---
+
+## 2. BRAND & CONTACT INFORMATION
+* **Brand Name:** BELIEVE JAH Design
+* **Primary Phone / WhatsApp:** 09116025977
+* **Social Handle:** TikTok @believejah08
+* **Physical Atelier Address:** Tim Caro Street, opposite Welfare Hospital, along Old Ife Road, Ibadan, Nigeria.
+
+---
+
+## 3. DESIGN SYSTEM & VISUAL LANGUAGE
+
+### 3.1 Color System
+* **Dominant Backgrounds:** Pitch Black (`#0A0A0A`), Pure White (`#FFFFFF`), Warm Off-White (`#F9F9F9`).
+* **Brand Primary Accent:** Crimson Red (`#E52321` - derived from logo icon & "Design" script).
+* **Text & UI Borders:** Matte Charcoal (`#111111`), Muted Slate (`#666666`), Hairline Dividers (`#E0E0E0` / `#222222`).
+
+### 3.2 Typography System
+* **Headings (Editorial):** Playfair Display or Cormorant Garamond (Serif).
+* **UI, Navigation, Form Text:** Montserrat or Inter (Sans-Serif, uppercase, letter-spacing: 2px).
+* **Accent Script:** High-fashion script font echoing the "Design" element in the logo.
+
+### 3.3 Navigation Bar (Sticky & Adaptive)
+* **Top Hero State (Dark Mode):** Transparent background, white text links, white logo, Crimson Red CTA `[ INQUIRE NOW ]`.
+* **Scrolled State (Light Mode):** Frosted glass backdrop (`rgba(255, 255, 255, 0.9)` + blur effect), black typography, red hover states.
+* **Mobile Drawer:** Deep black full-screen overlay containing navigation items and direct social/WhatsApp triggers.
+
+---
+
+## 4. PAGE ARCHITECTURE & FUNCTIONAL REQUIREMENTS
+
+### Section 1: Split-Screen Hero Banner
+* **Visual:** Full-viewport split presentation. Left column features a cinematic slow-motion loop of bespoke embroidery; right column displays studio editorial photography of custom tees.
+* **Copy:** Headline: "HERITAGE CRAFTSMANSHIP. MODERN EXPRESSION."
+* **CTAs:**
+  1. Primary Button: `[ REQUEST CUSTOM FIT ]` (Solid Crimson Red).
+  2. Secondary Button: `[ EXPLORE LOOKBOOK ]` (Ghost Outline).
+
+### Section 2: Brand Philosophy
+* **Layout:** Centered text block bounded by 1px grey border dividers.
+* **Content:** Brand story detailing the bridge between traditional Nigerian elegance and contemporary streetwear. Faint background watermark of circular 'B' monogram logo.
+
+### Section 3: Meet the Master Tailor
+* **Layout:** Two-column editorial spread.
+* **Elements:** High-resolution portrait of the creative director in the studio, biography, craft philosophy, and a styled pull-quote: "Every cut is measured to project stature, confidence, and identity."
+
+### Section 4: Pinterest-Style Masonry Lookbook Grid
+* **Layout:** Dynamic CSS Masonry / Flex grid with varying aspect ratios.
+  * **9:16 Vertical Rectangles:** Full-length Agbadas, Kaftans, and Senators.
+  * **1:1 Square Cards:** Close-ups of embroidery, necklines, weaves, and custom tees.
+  * **16:9 Landscape Cards:** Editorial campaign imagery spanning multiple columns.
+* **Interactivity:** On hover, apply a dark gradient overlay revealing garment title, category tag (*Bespoke Native* or *Custom Tee*), and a Crimson CTA: `[ INQUIRE ABOUT THIS LOOK ]` (clicking pre-fills the consultation form with garment data).
+
+### Section 5: The Custom Fit Interactive Hub
+* **Layout:** Multi-step interactive flow for bespoke ordering.
+* **Steps:**
+  1. *Garment Type:* Agbada / Kaftan / Senator / Custom Graphic Tee.
+  2. *Fit Preference:* Tailored Slim Fit / Traditional Regular / Relaxed.
+  3. *Fabric Choice:* Cashmere / Wool / Polished Cotton / Aso-Oke trims.
+  4. *Measurements:* Select "Submit Measurements Now", "Book In-Person Session", or "Download Fitting Guide PDF".
+
+### Section 6: Anatomy of Excellence
+* **Layout:** Horizontal scroll or interactive feature highlighting three pillars:
+  1. *The Stitch:* High-tensile precision embroidery.
+  2. *The Fabric:* Sourced luxury textiles.
+  3. *The Monogram:* Custom hand-embroidery.
+
+### Section 7: Client Testimonials
+* **Layout:** Minimalist carousel showing photos of grooms and notable clients with testimonials, names, and event details (e.g., "Bespoke Wedding Native — Lagos, 2026").
+
+### Section 8: Interactive Studio Map
+* **Layout:** Full-width dark-mode map integration highlighting: **Tim Caro Street, opposite Welfare Hospital, along Old Ife Road, Ibadan, Nigeria**. Includes direct directions trigger for mobile devices.
+
+### Section 9: Comprehensive Consultation & Contact Form
+* **Form Fields:**
+  * Full Name (Text Input)
+  * Email Address & WhatsApp Phone Number (Tel Input)
+  * Inquiry Type (Dropdown: Bespoke Native Wear, Custom Tee Order, Wedding Fitting, General Inquiry)
+  * Target Wear / Event Date (Date Picker)
+  * Budget Selector (Select Box)
+  * File Attachment Field (Upload inspo images or self-measurement documents)
+  * Detailed Message Box (Textarea)
+* **Submit Action:** Sends email notification to atelier admin and triggers a WhatsApp redirect with pre-formatted message text to **09116025977**.
+
+### Section 10: Editorial Footer
+* **Elements:**
+  * BELIEVE JAH Design logo vector.
+  * Links: Lookbook, Custom Fit, Atelier Story, Download Measurement PDF.
+  * Contact Info: Phone/WhatsApp (09116025977), TikTok (@believejah08), Studio Address (Ibadan, Nigeria).
+  * Floating persistent WhatsApp chat trigger anchored in bottom-right viewport with Crimson badge indicator.
+
+---
+
+## 5. TECHNICAL & NON-FUNCTIONAL REQUIREMENTS
+1. **Performance:** Image optimization (WebP/AVIF formats), lazy loading for non-hero assets, target load time under 2.5 seconds on mobile 4G networks.
+2. **Responsiveness:** Mobile-first architecture (320px to 1920px+ viewport coverage).
+3. **SEO:** Structured Schema markup for local business (Fashion Design Studio in Ibadan), meta tags optimized for "Nigerian tailored native wear", "Bespoke Agbada Ibadan", "Custom graphic tees".
