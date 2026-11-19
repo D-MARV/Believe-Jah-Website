@@ -251,7 +251,7 @@ function Home() {
           <article className="craft-item"><span className="craft-number">02 / THE FABRIC</span><h3>Feel before form.</h3><p>Luxury textiles are selected for their texture, drape and the way they live with you over time.</p><div className="craft-rule" /></article>
           <article className="craft-item"><span className="craft-number">03 / THE MONOGRAM</span><h3>A mark of your own.</h3><p>Custom hand-embroidery gives each piece a considered signature, made to belong to one person.</p><div className="craft-rule" /></article>
         </div>
-        <div className="craft-image-strip"><img src={`${assets}Believe_Jah_11_1791518540556.jpeg`} alt="A wearer in a finished white BELIEVE JAH Design outfit with embroidered details" loading="lazy" /><div className="craft-image-caption"><span>In the details</span><h3>Every stitch has a reason.</h3></div></div>
+        <div className="craft-image-strip"><img src={`${assets}Teal_Green_Agbada_1791518540559.jpg`} alt="Teal embroidered Agbada displayed at the BELIEVE JAH Design atelier" loading="lazy" /><div className="craft-image-caption"><span>In the details</span><h3>Every stitch has a reason.</h3></div></div>
       </section>
 
       <section id="testimonials" className="testimonials section-pad" aria-labelledby="testimonials-title">
